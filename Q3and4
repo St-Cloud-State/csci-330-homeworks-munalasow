@@ -1,0 +1,42 @@
+Script started on Sun Jan 26 05:31:08 2025
+[1m[7m%[27m[1m[0m                                                                                ]7;file://WSU-KD9F4TV263/Users/cd0829oi[0m[27m[24m[Jcd0829oi@WSU-KD9F4TV263 ~ % [K[?2004hssbcl[?2004l
+This is SBCL 2.5.0, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* ;; Question 3a
+(car (cdr (cdr '(a b x d)))) ; Should return X
+
+;; Question 3b
+(car (car (cdr (car (cdr '(a (b (x d)))))))) ; Should return X
+
+;; Question 3c
+(car (car (cdr (car (cdr (car (car '(((a (b (x) d))))))))))) ; Should return X
+
+;; Question 4a
+(cons 'a (cons 'b (cons 'x (cons 'd '())))) ; Should return (A B X D)
+
+;; Question 4b
+(cons 'a (cons (cons 'b (cons (cons 'x (cons 'd '())) '())) '())) ; Should return (A (B (X D)))
+
+;; Question 4c
+(cons (cons (cons 'a (cons (cons 'b (cons (cons 'x '()) (cons 'd '()))) '())) '()) '()) ; Should return (((A (B (X) D))))
+X
+* X
+* X
+* (A B X D)
+* (A (B (X D)))
+* (((A (B (X) D))))
+* 
+(exit)
+[1m[7m%[27m[1m[0m                                                                                ]7;file://WSU-KD9F4TV263/Users/cd0829oi[0m[27m[24m[Jcd0829oi@WSU-KD9F4TV263 ~ % [K[?2004heexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Sun Jan 26 05:33:05 2025
